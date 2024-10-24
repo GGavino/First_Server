@@ -1,7 +1,8 @@
 const express = require('express');
 const path = require('path');
+const cors = require('cors'); // Import the cors middleware
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000; // Use process.env.PORT for deployment
 
 var chave = {
     "numero1": 0,
@@ -39,6 +40,7 @@ function genRandonKey() {
     return chave; // Ensure the function returns the updated chave object
 }
 
+app.use(cors()); // Use the cors middleware
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res) => {
