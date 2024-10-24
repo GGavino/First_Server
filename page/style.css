@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+
+.boxes {
+    display: flex;
+    justify-content: space-between; /* Space the boxes evenly */
+    gap: 10px; /* Add gap between all boxes */
+    max-width: 500px; /* Keep the container size reasonable */
+}
+.box {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f7fff;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.separator {
+    font-size: 30px; /* Make the dash bigger */
+    color: #000;     /* Color for the dash */
+    padding: 0 5px; /* Add some space on the sides of the dash */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box:nth-child(7) {
+    background-color: #fc0;
+}
+.box:nth-child(8) {
+    background-color: #fc0;
+}
