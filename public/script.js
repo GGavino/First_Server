@@ -1,7 +1,7 @@
 // Function to assign random numbers to each box
 function assignRandomValues() {
     // Example fetch request to retrieve the JSON data from the server
-    fetch('http://localhost:8000')
+    fetch('http://localhost:3000/api/generate-key')
     .then(response => {
     if (!response.ok) {
         throw new Error('Network response was not ok');

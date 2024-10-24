@@ -5,12 +5,9 @@
   "name": "first-servers",
   "version": "1.0.0",
   "main": "server.js",
-  "devDependencies": {
-    "concurrently": "^7.6.0"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "concurrently \"node server.js\" \"start page/index.html\""
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
